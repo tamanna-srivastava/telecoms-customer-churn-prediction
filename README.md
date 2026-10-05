@@ -78,13 +78,13 @@ Sensitivity here means the share of actual leavers the model caught. Specificity
 
 
 
-**Decision tree - ** House value splits the base first, at £605,000. Below that threshold, the next split is overage. **Customers overcharged £109 or more per month have only a 21% chance of staying.** That is 22% of the entire customer base churning at about 79%, and it is the highest-risk segment in the model. Within the customers paying less than £109 in overage, those with 25% or more of their minutes left unused each month have a 39% chance of staying. Above £605,000 in house value the split is on income, and the direction is counterintuitive. Customers earning £100,000 or more have only a 42% chance of staying, while those earning under £100,000 form the most loyal segment in the model at 82%.
+**Decision tree -** House value splits the base first, at £605,000. Below that threshold, the next split is overage. **Customers overcharged £109 or more per month have only a 21% chance of staying.** That is 22% of the entire customer base churning at about 79%, and it is the highest-risk segment in the model. Within the customers paying less than £109 in overage, those with 25% or more of their minutes left unused each month have a 39% chance of staying. Above £605,000 in house value the split is on income, and the direction is counterintuitive. Customers earning £100,000 or more have only a 42% chance of staying, while those earning under £100,000 form the most loyal segment in the model at 82%.
 
-**Logistic regression - ** Accuracy 64.85%, AUC 0.703. All six predictors were statistically significant, but overage and house value are far more important than the rest. An AUC of 0.703 means that if you pick one customer who left and one who stayed at random, the model gives the higher churn probability to the actual leaver about 70% of the time.
+**Logistic regression -** Accuracy 64.85%, AUC 0.703. All six predictors were statistically significant, but overage and house value are far more important than the rest. An AUC of 0.703 means that if you pick one customer who left and one who stayed at random, the model gives the higher churn probability to the actual leaver about 70% of the time.
 
-**KNN - ** Accuracy 68.27%, and the most balanced sensitivity and specificity of the three models. It beats logistic regression on both accuracy and sensitivity. Sensitivity is the metric that matters for this business question, since the objective is catching leavers.
+**KNN -** Accuracy 68.27%, and the most balanced sensitivity and specificity of the three models. It beats logistic regression on both accuracy and sensitivity. Sensitivity is the metric that matters for this business question, since the objective is catching leavers.
 
-**Clustering - ** Three clusters, chosen using the elbow method.
+**Clustering -** Three clusters, chosen using the elbow method.
 
 | Cluster | Size | Churn rate | Profile |
 |---|---|---|---|
